@@ -5,21 +5,21 @@
 class Juggle < Formula
   desc "Task management CLI for autonomous AI agent loops"
   homepage "https://github.com/ohare93/juggle"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ohare93/juggle/releases/download/v0.3.0/juggle_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d38b38a2535080b1e91e87f358b514e2dd7556e07aec473113315e77eaa7fb7c"
+      url "https://github.com/ohare93/juggle/releases/download/v0.4.0/juggle_0.4.0_darwin_amd64.tar.gz"
+      sha256 "88a855d7b35b2411b58e3211039013284322996c0ea159c86cef4f0339cca6b8"
 
       def install
         bin.install "juggle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ohare93/juggle/releases/download/v0.3.0/juggle_0.3.0_darwin_arm64.tar.gz"
-      sha256 "140513157ce2009ae63ffdf14e3410e9045105a8c8568d47ee602aa0eb693dba"
+      url "https://github.com/ohare93/juggle/releases/download/v0.4.0/juggle_0.4.0_darwin_arm64.tar.gz"
+      sha256 "77fc0265f84a4cccc06fb55fd61920d3a245e9a3aebeac17d072feb42bc63573"
 
       def install
         bin.install "juggle"
@@ -29,15 +29,15 @@ class Juggle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ohare93/juggle/releases/download/v0.3.0/juggle_0.3.0_linux_amd64.tar.gz"
-      sha256 "d4edb7b7a022433afda58b5fa4693dcaafd68e7d721d81734d70d849a2efc938"
+      url "https://github.com/ohare93/juggle/releases/download/v0.4.0/juggle_0.4.0_linux_amd64.tar.gz"
+      sha256 "1a1c3f485414ad975cfb355b6179f04f8c94210f71308d1797920afeeeaa62a0"
       def install
         bin.install "juggle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ohare93/juggle/releases/download/v0.3.0/juggle_0.3.0_linux_arm64.tar.gz"
-      sha256 "69b3a792ad97fe17051a0f00823542511d4089641d4febfe0ffe3c4502805e63"
+      url "https://github.com/ohare93/juggle/releases/download/v0.4.0/juggle_0.4.0_linux_arm64.tar.gz"
+      sha256 "1d66b7c3652452e27c5d11c95c4278fb7f412c28858de582dcd2c390c70ba1a0"
       def install
         bin.install "juggle"
       end
