@@ -5,21 +5,21 @@
 class Frontloop < Formula
   desc "CLI for managing frontloop task queues"
   homepage "https://github.com/ohare93/frontloop"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ohare93/frontloop/releases/download/v1.0.0/frontloop_1.0.0_darwin_amd64.tar.gz"
-      sha256 "4a77ea364bcc86fd7eb484d70798ead0e13acc9322641fbfd59fc2bf6f256cab"
+      url "https://github.com/ohare93/frontloop/releases/download/v1.0.1/frontloop_1.0.1_darwin_amd64.tar.gz"
+      sha256 "b4bf8e65d12a967cf2dd5209b09c19d8c951127d6950624d16881deb59f9f764"
 
       define_method(:install) do
         bin.install "fl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ohare93/frontloop/releases/download/v1.0.0/frontloop_1.0.0_darwin_arm64.tar.gz"
-      sha256 "490e46df469b46697515b68c829e4aba9dce2a67cded7a35d343c1b65115c5aa"
+      url "https://github.com/ohare93/frontloop/releases/download/v1.0.1/frontloop_1.0.1_darwin_arm64.tar.gz"
+      sha256 "e80ef9917e37787780b7d9ab106753d4b77e24ca172a70b2f7274a0b7464f183"
 
       define_method(:install) do
         bin.install "fl"
@@ -29,15 +29,15 @@ class Frontloop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ohare93/frontloop/releases/download/v1.0.0/frontloop_1.0.0_linux_amd64.tar.gz"
-      sha256 "ce12fadf7cc31870b06cd01eaed178e31f09028f59dc579aecc5b001eb31cb38"
+      url "https://github.com/ohare93/frontloop/releases/download/v1.0.1/frontloop_1.0.1_linux_amd64.tar.gz"
+      sha256 "ede78afcb3e5fc98c9470cd6209d71c6fcbf131c02d60e20cc6d891c8af86e6b"
       define_method(:install) do
         bin.install "fl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ohare93/frontloop/releases/download/v1.0.0/frontloop_1.0.0_linux_arm64.tar.gz"
-      sha256 "ae5f5f4db4e320fb6e1aeb97549013c8e3885df49cf92a94fc583a7ca08091ef"
+      url "https://github.com/ohare93/frontloop/releases/download/v1.0.1/frontloop_1.0.1_linux_arm64.tar.gz"
+      sha256 "e9696097969c8214e12c32f9f4a88a244f9696e3c3671144d6253080da9f2010"
       define_method(:install) do
         bin.install "fl"
       end
