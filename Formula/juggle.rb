@@ -5,21 +5,21 @@
 class Juggle < Formula
   desc "Minimal agent loop runner"
   homepage "https://github.com/ohare93/juggle"
-  version "1.0.2"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ohare93/juggle/releases/download/v1.0.2/juggle_1.0.2_darwin_amd64.tar.gz"
-      sha256 "a6222024d8b00de095b356d63e584363f7269f754a7f1e6832c80c1c0627ff86"
+      url "https://github.com/ohare93/juggle/releases/download/v1.1.2/juggle_1.1.2_darwin_amd64.tar.gz"
+      sha256 "07de8c2490f2f13cad78dea6419ae056a176035457c3238e0ef695052fae803c"
 
       define_method(:install) do
         bin.install "juggle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ohare93/juggle/releases/download/v1.0.2/juggle_1.0.2_darwin_arm64.tar.gz"
-      sha256 "6b0c1fb7297c77256b9fb1f7cf710125df83fcc8c32fc2d4666faef579b48138"
+      url "https://github.com/ohare93/juggle/releases/download/v1.1.2/juggle_1.1.2_darwin_arm64.tar.gz"
+      sha256 "0e5256b89cab2dbdcdb6af34a853c7935838c673c0a27e1f0481871d348610ea"
 
       define_method(:install) do
         bin.install "juggle"
@@ -29,15 +29,15 @@ class Juggle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ohare93/juggle/releases/download/v1.0.2/juggle_1.0.2_linux_amd64.tar.gz"
-      sha256 "80f27657672227dec6b617bb80ed63f6310305883c8c017b4174880869e0058d"
+      url "https://github.com/ohare93/juggle/releases/download/v1.1.2/juggle_1.1.2_linux_amd64.tar.gz"
+      sha256 "91cff32eb5e127e31da7f2bc9f6a03b84a47fa0d43051f82b01d977bb528799f"
       define_method(:install) do
         bin.install "juggle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ohare93/juggle/releases/download/v1.0.2/juggle_1.0.2_linux_arm64.tar.gz"
-      sha256 "9cca59ed1c373bca99633634a3c7e6058aea2c44a4c12eacb6f33a4bf8b576cd"
+      url "https://github.com/ohare93/juggle/releases/download/v1.1.2/juggle_1.1.2_linux_arm64.tar.gz"
+      sha256 "8216455ad75ec22a646276d20605852cf3bad3096085438d6c89995dda71b2d8"
       define_method(:install) do
         bin.install "juggle"
       end
